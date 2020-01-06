@@ -35,15 +35,3 @@ const fetchMessages = async () => {
 };
 
 setInterval(() => fetchMessages(), 10000);
-
-// pollTime is 10000 because reddit is very strict on posting too frequently
-// at first, you'll only be able to post once every 10 minutes, so make sure you get it right!
-// const comments = new CommentStream(client, {
-//   subreddit: 'AskReddit',
-//   limit: 10,
-//   pollTime: 10000
-// });
-
-// comments.on('item', item => {
-//   console.log(item);
-// });
