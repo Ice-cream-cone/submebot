@@ -16,11 +16,11 @@ const fetchMessages = async () => {
 
   messages.map(async comment => {
     try {
-      //check to see if message is unread
+      //check to see if message is unread.
       if (comment.new) {
         console.log(comment);
         comment.reply(
-          'thanks for including me.' +
+          'thanks for including me. ' +
             keywordExtractor.extract(comment.link_title)
         );
         console.log(keywordExtractor.extract(comment.link_title));
