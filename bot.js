@@ -31,7 +31,7 @@ const fetchMessages = async () => {
       console.log(error);
     }
   });
-  //Set time out for 10 seconds before running the function again
+  //Set 10 seconds timeout before running the function again
 };
 
 setInterval(() => fetchMessages(), 10000);
